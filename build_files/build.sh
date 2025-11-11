@@ -10,7 +10,5 @@ dnf5 install -y niri
 dnf5 install -y swww waybar swaylock
 dnf5 install -y lightdm lightdm-settings
 
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 systemctl enable lightdm.service
 systemctl enable podman.socket
