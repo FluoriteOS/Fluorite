@@ -1,4 +1,4 @@
-<img width="1024" height="1024" alt="Fluorite_Logo" src="https://github.com/user-attachments/assets/18d0e9eb-0fe3-4d75-ad7f-f07dcef6dd0f" />
+![Fluorite Logo](https://github.com/user-attachments/assets/18d0e9eb-0fe3-4d75-ad7f-f07dcef6dd0f)
 
 # Fluorite
 
