@@ -16,12 +16,11 @@ dnf5 install -y lightdm lightdm-settings
 dnf5 install -y nemo
 dnf5 install -y ghostty
 dnf5 install -y starship
-dnf5 install -y libreoffice
+dnf5 install -y yazi croc obs-studio qt5ct qt6ct eza swaync fuzzel
 
 # Flatpak packages
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-flatpak install -y flathub menu.kando.Kando io.github.kolunmi.Bazaar com.github.marhkb.Pods io.github.flattool.Warehouse com.github.tchx84.Flatseal app.zen_browser.zen
-
+flatpak install -y flathub menu.kando.Kando io.github.kolunmi.Bazaar com.github.marhkb.Pods
 systemctl enable lightdm.service
 systemctl enable podman.socket
