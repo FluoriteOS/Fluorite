@@ -1,5 +1,3 @@
-![Fluorite Logo](https://github.com/user-attachments/assets/18d0e9eb-0fe3-4d75-ad7f-f07dcef6dd0f)
-
 # Fluorite
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/FluoriteOS/Fluorite/build.yml?style=for-the-badge&logo=github&label=Container%20Build)
