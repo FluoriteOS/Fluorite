@@ -16,7 +16,7 @@ dnf5 install -y lightdm lightdm-settings
 dnf5 install -y nemo
 dnf5 install -y ghostty
 dnf5 install -y starship
-dnf5 install -y libreoffce
+dnf5 install -y libreoffice
 
 # Flatpak packages
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
