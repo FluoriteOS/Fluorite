@@ -16,7 +16,7 @@ dnf5 install -y lightdm lightdm-settings
 dnf5 install -y nemo
 dnf5 install -y ghostty
 dnf5 install -y starship
-dnf5 install -y yazi croc obs-studio qt5ct qt6ct eza swaync fuzzel
+dnf5 install -y croc obs-studio qt5ct qt6ct swaync fuzzel
 
 # Flatpak packages
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
