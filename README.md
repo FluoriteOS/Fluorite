@@ -1,7 +1,7 @@
 # Fluorite
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/FluoriteOS/Fluorite/build.yml?style=for-the-badge&logo=github&label=Container%20Build)
-![GitHub last commit](https://img.shields.io/github/last-commit/FluoriteOS/Fluorite?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/FluoriteOS/Fluorite?style=for-the-badge&logo=github)
 
 **Fluorite** is a *uBlue* image built for the power user.
 
