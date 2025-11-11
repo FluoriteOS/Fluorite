@@ -21,7 +21,7 @@ dnf5 install -y libreoffice
 # Flatpak packages
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-flatpak install -y flathub menu.kando.Kando io.github.kolunmi.Bazaar org.gnome.Builder com.github.marhkb.Pods io.github.flattool.Warehouse com.github.tchx84.Flatseal org.gnome.World.PikaBackup app.zen_browser.zen
+flatpak install -y flathub menu.kando.Kando io.github.kolunmi.Bazaar com.github.marhkb.Pods io.github.flattool.Warehouse com.github.tchx84.Flatseal app.zen_browser.zen
 
 systemctl enable lightdm.service
 systemctl enable podman.socket
