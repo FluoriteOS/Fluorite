@@ -17,3 +17,7 @@ It uses *Niri* as a desktop, and comes included with a bunch of handy tools, inc
 - Zen Browser
 - and more!
 
+## Documentation
+
+There is currently no documentation, but that could change in future!  
+We would highly appreciate your contributions to the **Wiki** on this repo, or even helping a fellow user on the **discussions**
