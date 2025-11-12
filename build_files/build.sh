@@ -10,7 +10,7 @@ dnf5 -y copr enable scottames/ghostty
 dnf5 -y copr enable atim/starship
 
 dnf5 install -y tmux ruby gcc cmake
-dnf5 install -y niri 
+dnf5 install -y niri dms
 dnf5 install -y swww waybar swaylock
 dnf5 install -y lightdm lightdm-settings
 dnf5 install -y nemo
@@ -24,3 +24,4 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install -y flathub io.github.kolunmi.Bazaar # com.github.marhkb.Pods menu.kando.Kando
 systemctl enable lightdm.service
 systemctl enable podman.socket
+systemctl --user add-wants niri.service dms
