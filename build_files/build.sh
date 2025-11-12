@@ -10,7 +10,7 @@ dnf5 -y copr enable scottames/ghostty
 dnf5 -y copr enable atim/starship
 
 dnf5 install -y tmux ruby gcc cmake
-dnf5 install -y niri dms
+dnf5 install -y niri dms wlogout hyprlock
 dnf5 install -y swww waybar swaylock
 dnf5 install -y lightdm lightdm-settings
 dnf5 install -y nemo
