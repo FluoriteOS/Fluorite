@@ -24,4 +24,3 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install -y flathub io.github.kolunmi.Bazaar # com.github.marhkb.Pods menu.kando.Kando
 systemctl enable lightdm.service
 systemctl enable podman.socket
-systemctl --user add-wants niri.service dms
