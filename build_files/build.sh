@@ -2,6 +2,9 @@
 
 set -ouex pipefail
 
+# Copy system files to filesystem
+rsync -rvK /ctx/system_files/ /
+
 # System packages
 
 dnf5 -y copr enable avengemedia/dms
