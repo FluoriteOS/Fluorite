@@ -1,0 +1,89 @@
+{
+  "layer": "top",
+  "position": "left",
+  "width": 28,
+  "margin": "2 0 2 2",
+  "spacing": 2,
+  "modules-left": [
+    "clock",
+    "custom/sep",
+    "tray"
+  ],
+  "modules-center": [
+    "niri/workspaces"
+  ],
+  "modules-right": [
+    "temperature",
+    "custom/sep",
+	"battery",
+	"custom/sep",
+    "pulseaudio",
+    "custom/powermenu"
+  ],
+  "custom/sep": {
+    //    "format": "──"
+    "format": "─"
+  },
+  "custom/powermenu": {
+    "on-click": "wlogout",
+    "format": " ",
+    "tooltip": false
+  },
+  "clock": {
+    "tooltip": true,
+    "format": "{:%H\n%M}",
+    "tooltip-format": "{:%Y-%m-%d}"
+  },
+  "tray": {
+    "icon-size": 18,
+    "show-passive-items": "true"
+  },
+  "temperature": {
+    "rotate": 90,
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "pulseaudio": {
+    "rotate": 90,
+    "format": "{icon}   {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-muted": "MUTE ",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 3,
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<span size='13000' foreground='#b7bdf8'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#b7bdf8'>{icon} </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#ed8796'>{icon} </span> {capacity}%",
+    "format-charging": "<span size='13000' foreground='#b7bdf8'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#b7bdf8'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#b7bdf8'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#b7bdf8'>󱟢 </span>{capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip-format": "{time}",
+	"rotate": 90
+  }
+}

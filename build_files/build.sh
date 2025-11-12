@@ -20,6 +20,7 @@ dnf5 install -y starship
 dnf5 install -y croc qt5ct qt6ct swaync fuzzel
 dnf5 install -y pavucontrol 
 dnf5 install -y jetbrains-mono-nerd-fonts
+dnf5 install -y lf cava fastfetch bat
 
 # Flatpak packages
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
