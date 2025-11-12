@@ -1,4 +1,5 @@
 FROM scratch AS ctx
+COPY /system_files /system_files
 COPY build_files /
 
 FROM ghcr.io/ublue-os/base-main:43
