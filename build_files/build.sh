@@ -2,6 +2,7 @@
 
 set -ouex pipefail
 
+dnf5 install -y rsync
 # Copy system files to filesystem
 rsync -rvK /ctx/system_files/ /
 
