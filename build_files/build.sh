@@ -16,7 +16,7 @@ dnf5 -y copr enable harryjph/fonts
 dnf5 install -y tmux ruby gcc cmake
 dnf5 install -y niri wlogout hyprlock
 dnf5 install -y swww waybar swaylock
-dnf5 install -y lightdm lightdm-settings
+dnf5 install -y sddm
 dnf5 install -y nemo
 dnf5 install -y ghostty
 dnf5 install -y starship
@@ -29,5 +29,5 @@ dnf5 install -y cava fastfetch bat
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install -y flathub io.github.kolunmi.Bazaar # com.github.marhkb.Pods menu.kando.Kando
-systemctl enable lightdm.service
+systemctl enable sddm.service
 systemctl enable podman.socket
