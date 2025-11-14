@@ -2,29 +2,28 @@
 
 set -ouex pipefail
 
-dnf5 install -y rsync
-# Copy system files to filesystem
-rsync -rvK /ctx/system_files/ /
-
 # System packages
 
-dnf5 -y copr enable avengemedia/dms
-dnf5 -y copr enable solopasha/hyprland
-dnf5 -y copr enable scottames/ghostty
-dnf5 -y copr enable atim/starship
-dnf5 -y copr enable harryjph/fonts
+dnf -y copr enable avengemedia/dms
+dnf -y copr enable solopasha/hyprland
+dnf -y copr enable scottames/ghostty
+dnf -y copr enable atim/starship
+dnf -y copr enable harryjph/fonts
 
-dnf5 install -y tmux ruby gcc cmake
-dnf5 install -y niri wlogout hyprlock
-dnf5 install -y swww waybar swaylock
-dnf5 install -y sddm
-dnf5 install -y nemo
-dnf5 install -y ghostty
-dnf5 install -y starship
-dnf5 install -y croc qt5ct qt6ct swaync fuzzel
-dnf5 install -y pavucontrol 
-dnf5 install -y jetbrains-mono-nerd-fonts
-dnf5 install -y cava fastfetch bat
+dnf install -y tmux ruby gcc cmake
+dnf install -y niri wlogout hyprlock
+dnf install -y swww waybar swaylock
+dnf install -y sddm
+dnf install -y nemo
+dnf install -y ghostty
+dnf install -y starship
+dnf install -y croc qt5ct qt6ct swaync fuzzel
+dnf install -y pavucontrol 
+dnf install -y jetbrains-mono-nerd-fonts
+dnf install -y cava fastfetch bat
+dnf install -y rsync
+
+rsync -rvK /ctx/system_files/ /
 
 # Flatpak packages
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
