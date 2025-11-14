@@ -2,7 +2,7 @@ FROM scratch AS ctx
 COPY /system_files /system_files
 COPY build_files /
 
-FROM ghcr.io/ublue-os/base-main:43
+FROM quay.io/rockylinux/rockylinux:latest
 
 # Universal Blue Images: https://github.com/orgs/ublue-os/packages
 # Fedora base image: quay.io/fedora/fedora-bootc:41
