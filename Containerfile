@@ -2,7 +2,7 @@ FROM scratch AS ctx
 COPY /system_files /system_files
 COPY build_files /
 
-FROM quay.io/rockylinux/rockylinux:latest
+FROM quay.io/centos-bootc/centos-bootc:stream10
 
 # Universal Blue Images: https://github.com/orgs/ublue-os/packages
 # Fedora base image: quay.io/fedora/fedora-bootc:41
